@@ -381,6 +381,19 @@ main { animation: pop 350ms ease-out both; }
   line-height: 1.05;
 }
 .activity-card .body { font-size: 17px; line-height: 1.58; max-width: 44ch; }
+.activity-photo {
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  border: 2px solid var(--ink);
+  overflow: hidden;
+}
+.card-link {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  width: fit-content;
+  border-bottom: 2px solid currentColor;
+}
 
 .bg-navy { background: var(--navy); color: var(--navy-fg); }
 .bg-sky { background: var(--sky); color: var(--sky-fg); }
@@ -428,7 +441,7 @@ main { animation: pop 350ms ease-out both; }
 }
 .officer-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .officer-card { display: grid; gap: 14px; }
@@ -641,6 +654,11 @@ main { animation: pop 350ms ease-out both; }
 .footer-address {
   font-size: 13px;
   letter-spacing: 0.08em;
+  color: #9A9284;
+}
+.footer-copyright {
+  font-size: 13px;
+  letter-spacing: 0.02em;
   color: #9A9284;
 }
 
