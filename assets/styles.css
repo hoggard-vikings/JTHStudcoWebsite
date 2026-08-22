@@ -536,6 +536,25 @@ main { animation: pop 350ms ease-out both; }
 
 .steps-list, .pillar-list { display: grid; gap: 16px; }
 
+.option-card {
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  padding: 34px;
+  background: var(--paper);
+  transition: background 180ms;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+.option-card:hover { background: var(--cream); }
+.option-card .title {
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: -0.025em;
+}
+.option-card .body { font-size: 18px; line-height: 1.6; color: var(--ink-soft); }
+
 .cta-box {
   border: 2px solid var(--ink);
   border-radius: 22px;
