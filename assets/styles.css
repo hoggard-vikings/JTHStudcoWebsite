@@ -42,10 +42,6 @@ a:hover { color: #FF6A2B; }
   from { opacity: 0; transform: scale(0.97); }
   to { opacity: 1; transform: scale(1); }
 }
-@keyframes spinslow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 main { animation: pop 350ms ease-out both; }
 
 /* Header / primary nav */
@@ -68,11 +64,8 @@ main { animation: pop 350ms ease-out both; }
   cursor: pointer;
 }
 .brand-mark {
-  width: 30px;
-  height: 30px;
-  border-radius: 999px;
-  background: conic-gradient(#FF6A2B 0 25%, #C8F04A 0 50%, #7A5CFF 0 75%, var(--sky) 0);
-  animation: spinslow 14s linear infinite;
+  height: 36px;
+  width: auto;
   display: block;
   flex: none;
 }
