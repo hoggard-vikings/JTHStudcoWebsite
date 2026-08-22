@@ -115,6 +115,24 @@ main { animation: pop 350ms ease-out both; }
 }
 .primary-nav a.active:hover { color: var(--paper); }
 
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  background: var(--paper);
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+.nav-toggle svg { width: 20px; height: 20px; display: block; }
+.nav-toggle .icon-close { display: none; }
+.nav-toggle[aria-expanded="true"] .icon-open { display: none; }
+.nav-toggle[aria-expanded="true"] .icon-close { display: block; }
+
 /* Buttons */
 .btn {
   cursor: pointer;
@@ -663,8 +681,22 @@ main { animation: pop 350ms ease-out both; }
 }
 
 @media (max-width: 860px) {
-  .site-header { flex-wrap: wrap; }
-  .primary-nav { justify-content: flex-start; }
+  .nav-toggle { display: flex; }
+  .primary-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    border-bottom: 2px solid var(--ink);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 20px 18px;
+    gap: 2px;
+  }
+  .primary-nav.open { display: flex; }
+  .primary-nav a { text-align: left; padding: 12px 14px; }
   .intro-grid,
   .about-photo-row,
   .hero-banner .hero-copy-row,
