@@ -353,6 +353,9 @@ main { animation: pop 350ms ease-out both; }
   transition: transform 180ms, box-shadow 180ms;
 }
 .shortcut-card:hover { transform: translateY(-6px); box-shadow: 8px 8px 0 var(--ink); }
+.shortcut-card.bg-coral:hover { color: var(--coral-fg); }
+.shortcut-card.bg-gold:hover { color: var(--gold-fg); }
+.shortcut-card.bg-navy:hover { color: var(--navy-fg); }
 .shortcut-card .kicker {
   font-size: 13px;
   letter-spacing: 0.14em;
@@ -405,6 +408,7 @@ main { animation: pop 350ms ease-out both; }
   width: fit-content;
   border-bottom: 2px solid currentColor;
 }
+.activity-card .card-link:hover { color: inherit; }
 
 .bg-navy { background: var(--navy); color: var(--navy-fg); }
 .bg-sky { background: var(--sky); color: var(--sky-fg); }
