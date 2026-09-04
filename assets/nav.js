@@ -13,3 +13,13 @@
     }
   });
 })();
+
+(() => {
+  const banner = document.getElementById('hours-banner');
+  const close = document.getElementById('hours-banner-close');
+  if (!banner || !close) return;
+  close.addEventListener('click', () => {
+    banner.style.display = 'none';
+    try { localStorage.setItem('hoursBannerDismissed', '1'); } catch (e) {}
+  });
+})();

@@ -14,6 +14,19 @@
 </head>
 <body>
 
+<div class="hours-banner" id="hours-banner">
+  <span class="hours-banner-text">Want to know how many hours you have? Use this form.</span>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScogmnDwf92Gzd6Z391cQ0J_jlADng7BORsAsleHs7_L-g8Vw/viewform?usp=header" class="hours-banner-btn" target="_blank" rel="noopener">Check my hours</a>
+  <button class="hours-banner-close" id="hours-banner-close" aria-label="Dismiss this banner">&times;</button>
+</div>
+<script>
+  try {
+    if (localStorage.getItem('hoursBannerDismissed') === '1') {
+      document.getElementById('hours-banner').style.display = 'none';
+    }
+  } catch (e) {}
+</script>
+
 <header class="site-header">
   <a class="brand" href="index.html">
     <img class="brand-mark" src="assets/favicon.png" alt="Hoggard Student Council logo">
@@ -57,7 +70,7 @@
         <h2>Class of 2027</h2>
         <p>Seniors lead homecoming, prom planning, and the senior week traditions that close out the year.</p>
       </div>
-      <a href="https://docs.google.com/forms/d/1zaS50U1lt-q_Rk_IgwZG9tikSKkmMYIY1jP3_-sqhN8/viewform?edit_requested=true" class="btn btn-solid" style="width: fit-content;" target="_blank" rel="noopener">Submit your hours</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvrEiN6nt0UxFl8qkNaIGh5sYnMjM_uAgBtEVNjhJD4HTigQ/viewform?usp=header" class="btn btn-solid" style="width: fit-content;" target="_blank" rel="noopener">Submit your hours</a>
       <div class="officer-grid">
         <div class="officer-card">
           <div class="officer-photo"><img class="photo-fill" src="assets/img/officers/senior-president-greyson-clymer.jpg" alt="Greyson Clymer"></div>
